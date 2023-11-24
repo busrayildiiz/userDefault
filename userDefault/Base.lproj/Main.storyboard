@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="userDefault" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notunuzu giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9H6-n5-GLS">
+                                <rect key="frame" x="45" y="98" width="312" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ne zamana yapılmalı?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7vo-mm-ck3">
+                                <rect key="frame" x="45" y="147" width="312" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHz-EW-Hcq">
+                                <rect key="frame" x="44" y="212" width="77" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydet"/>
+                                <connections>
+                                    <action selector="kaydetTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q3s-Tt-CtB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cru-Af-W33">
+                                <rect key="frame" x="298" y="212" width="43" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sil"/>
+                                <connections>
+                                    <action selector="silTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6F-tq-gXq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yapılacak iş:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-MZ-g0n">
+                                <rect key="frame" x="54" y="272" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yapılacak zaman:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krr-mi-8XT">
+                                <rect key="frame" x="54" y="310" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Txd-MZ-g0n" firstAttribute="leading" secondItem="krr-mi-8XT" secondAttribute="leading" id="10a-ez-sjR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Txd-MZ-g0n" secondAttribute="trailing" constant="171" id="2rr-mH-HGq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cru-Af-W33" secondAttribute="trailing" constant="52" id="4Km-bl-i72"/>
+                            <constraint firstItem="9H6-n5-GLS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="5uv-4s-w0K"/>
+                            <constraint firstItem="QHz-EW-Hcq" firstAttribute="top" secondItem="7vo-mm-ck3" secondAttribute="bottom" constant="31" id="Am8-54-6UY"/>
+                            <constraint firstItem="Txd-MZ-g0n" firstAttribute="top" secondItem="QHz-EW-Hcq" secondAttribute="bottom" constant="25" id="Mea-12-2TL"/>
+                            <constraint firstItem="9H6-n5-GLS" firstAttribute="leading" secondItem="7vo-mm-ck3" secondAttribute="leading" id="OFl-hE-td7"/>
+                            <constraint firstItem="9H6-n5-GLS" firstAttribute="trailing" secondItem="7vo-mm-ck3" secondAttribute="trailing" id="QAd-im-uCe"/>
+                            <constraint firstItem="krr-mi-8XT" firstAttribute="top" secondItem="Txd-MZ-g0n" secondAttribute="bottom" constant="17" id="QWr-cD-w2i"/>
+                            <constraint firstItem="Txd-MZ-g0n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="Z28-sy-Q2A"/>
+                            <constraint firstItem="9H6-n5-GLS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="az4-Ht-GaF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9H6-n5-GLS" secondAttribute="trailing" constant="36" id="iqJ-x5-LHL"/>
+                            <constraint firstItem="7vo-mm-ck3" firstAttribute="top" secondItem="9H6-n5-GLS" secondAttribute="bottom" constant="15" id="qge-3f-Gkr"/>
+                            <constraint firstItem="QHz-EW-Hcq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="rWT-AN-Mqy"/>
+                            <constraint firstItem="QHz-EW-Hcq" firstAttribute="baseline" secondItem="Cru-Af-W33" secondAttribute="baseline" id="xuo-PA-Qx1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="notLabel" destination="Txd-MZ-g0n" id="Jr5-22-23f"/>
+                        <outlet property="notTextField" destination="9H6-n5-GLS" id="o2o-aF-iV5"/>
+                        <outlet property="zamanLabel" destination="krr-mi-8XT" id="Oqn-s5-kGa"/>
+                        <outlet property="zamanTextField" destination="7vo-mm-ck3" id="cy1-ra-xmx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
